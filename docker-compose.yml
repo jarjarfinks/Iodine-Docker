@@ -1,0 +1,23 @@
+version: "2"
+services:
+    dns:
+        build: ./dns
+        ports:
+            - "10.140.0.3:53:53/udp"
+        devices:
+            - /dev/net/tun:/dev/net/tun
+        cap_add:
+            - NET_ADMIN
+        environment:
+            - DNS="" #put your domain
+            - PASSWORD="" #put your password
+            - IP="192.168.100.1" #put your ip if you want
+volumes:
+    persistent:
+networks:
+    default:
+        driver: bridge
+        ipam:
+            driver: default
+            config:
+                - subnet:  172.27.99.0/24
