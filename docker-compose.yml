@@ -3,7 +3,7 @@ services:
     dns:
         build: ./dns
         ports:
-            - "10.140.0.3:53:53/udp"
+            - "53:53/udp"
         devices:
             - /dev/net/tun:/dev/net/tun
         cap_add:
@@ -11,7 +11,7 @@ services:
         environment:
             - DNS="" #put your domain
             - PASSWORD="" #put your password
-            - IP="192.168.100.1" #put your ip if you want
+            - IP="10.1.1.0" #put your ip if you want
 volumes:
     persistent:
 networks:
