@@ -3,7 +3,7 @@
 1. 	set two domain records
 ```
 tunnel		IN	NS	ns1.mydomain.com.		; THIS IS the DOMAIN YOU NEED TO WRITE IN SETTING
-ns1		IN	A	1.1.1.1		; POINT TO YOUR IP
+ns1		IN	A	1.1.1.1				; POINT TO YOUR IP
   ```
 ## Server side
 1. manage file setting dns password in `docker-compose.yml`
