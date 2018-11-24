@@ -11,7 +11,7 @@ services:
         environment:
             - DNS="" #put your domain
             - PASSWORD="" #put your password
-            - IP="10.1.1.0" #put your ip if you want
+            - IP="10.1.1.1" #put your ip if you want
 volumes:
     persistent:
 networks:
