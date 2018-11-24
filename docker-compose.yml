@@ -3,7 +3,7 @@ services:
     dns:
         build: ./dns
         ports:
-            - "53:53/udp"
+            - "53:53/udp" # if your server had a dns server at 127.0.0.1 change to "{YOUR_PUBLIC_IP}:53:53/udp"
         devices:
             - /dev/net/tun:/dev/net/tun
         cap_add:
