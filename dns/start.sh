@@ -1,2 +1,2 @@
 /etc/init.d/ssh restart 
-iodined	 -f -P $PASSWORD $IP $DNS
+iodined	-c -f -P $PASSWORD $IP $DNS
