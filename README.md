@@ -6,8 +6,9 @@ tunnel		IN	NS	ns1.mydomain.com.		; THIS IS the DOMAIN YOU NEED TO WRITE IN SETTI
 ns1		IN	A	1.1.1.1				; POINT TO YOUR IP
   ```
 ## Server side
-1. manage file setting dns password in `docker-compose.yml`
-2. `docker-compose up -d`
+1. git clone this project 
+2. manage file setting dns password in `docker-compose.yml`
+3. `docker-compose up -d`
 
 ## Client 
 1. install iodine  `apt isntall iodine`
