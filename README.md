@@ -1,4 +1,4 @@
-# iodined DNS Tunnel with SSH quick start
+# iodine DNS Tunnel with SSH quick start
 ## DNS 
 1. 	set two domain records
 ```
