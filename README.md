@@ -13,6 +13,6 @@ ns1		IN	A	1.1.1.1				; POINT TO YOUR IP
 1. install iodine  `apt isntall iodine`
 2. run command with your password and domain name `iodine -f -P {PASSWORD} {DNS}` 
     - ex. `iodine -f -P "aaaa" "tunnel.mydomain.com"`
-3. get SSH Tunnel for a proxy  `ssh -D 8080 sshproxy@10.1.1.1` and password is `sshproxy`
+3. get SSH Tunnel for a proxy  `ssh -D 8080  sshproxy@10.1.1.1` and password is `sshproxy`
 4. set your proxy to 127.0.0.1:8080 with SOCK
 5. enjoy it!
