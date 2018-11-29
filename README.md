@@ -5,7 +5,7 @@
 tunnel		IN	NS	ns1.mydomain.com.		; THIS IS the DOMAIN YOU NEED TO WRITE IN SETTING
 ns1		IN	A	1.1.1.1				; POINT TO YOUR IP
   ```
-## Server side
+## Server
 1. git clone this project 
 2. manage file setting dns password in `docker-compose.yml`
 3. `docker-compose up -d`
