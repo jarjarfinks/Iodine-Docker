@@ -11,7 +11,7 @@ ns1		IN	A	1.1.1.1				; POINT TO YOUR IP
 3. `docker-compose up -d`
 
 ## Client 
-1. install iodine  `apt isntall iodine`
+1. install iodine  `apt install iodine`
 2. run command with your password and domain name `iodine -f -P {PASSWORD} {DNS}` 
     - ex. `iodine -f -P "aaaa" "tunnel.mydomain.com"`
 3. get SSH Tunnel for a proxy  `ssh -D 8080  sshproxy@10.1.1.1` and password is `sshproxy`
