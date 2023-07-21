@@ -1,6 +1,6 @@
-FROM ubuntu:latest
+FROM ubuntu:16.04
 RUN apt-get update -y
-RUN apt-get install -y iodine openssh-server 
+RUN apt-get install -y iodine openssh-server  net-tools  
 RUN useradd -ms /bin/bash  sshproxy
 RUN echo  "sshproxy:sshproxy"|chpasswd
 RUN echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config

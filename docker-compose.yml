@@ -9,9 +9,9 @@ services:
         cap_add:
             - NET_ADMIN
         environment:
-            - DNS="" #put your domain
-            - PASSWORD="" #put your password
-            - IP="10.1.1.1" #put your ip if you want
+            - DNS= #put your domain (tunnel.mydomain.com)
+            - PASSWORD= #put your password
+            - IP=10.1.1.1 #put your ip if you want
 volumes:
     persistent:
 networks:
